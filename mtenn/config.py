@@ -419,7 +419,7 @@ class GATModelConfig(ModelConfigBase):
     """
 
     # Import as private, mainly so Sphinx doesn't autodoc it
-    from dgllife.utils import CanonicalAtomFeaturizer as _CanonicalAtomFeaturizer
+    #from dgllife.utils import CanonicalAtomFeaturizer as _CanonicalAtomFeaturizer
 
     # Dict of model params that can be passed as a list, and the type that each will be
     #  cast to
@@ -436,7 +436,7 @@ class GATModelConfig(ModelConfigBase):
     }  #: :meta private:
 
     model_type: Literal[ModelType.GAT] = ModelType.GAT
-
+    """	
     in_feats: int = Field(
         _CanonicalAtomFeaturizer().feat_size(),
         description=(
@@ -444,6 +444,7 @@ class GATModelConfig(ModelConfigBase):
             "``CanonicalAtomFeaturizer``."
         ),
     )
+    """
     num_layers: int = Field(
         2,
         description=(
