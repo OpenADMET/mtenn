@@ -6,8 +6,8 @@ package.
 """
 from copy import deepcopy
 import torch
-from dgllife.model import GAT as GAT_dgl
-from dgllife.model import WeightedSumAndMax
+# from dgllife.model import GAT as GAT_dgl
+# from dgllife.model import WeightedSumAndMax
 
 from mtenn.model import LigandOnlyModel
 
