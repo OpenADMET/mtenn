@@ -882,14 +882,14 @@ class GATRepresentationConfig(RepresentationConfigBase):
         ),
     )
     feat_drops: str | float | list[float] = Field(
-        0,
+        0.0,
         description=(
             "Dropout of input features for each GAT layer. Passing a ``float`` or "
             "list of ``float`` s functions similarly as for ``hidden_feats``."
         ),
     )
     attn_drops: str | float | list[float] = Field(
-        0,
+        0.0,
         description=(
             "Dropout of attention values for each GAT layer. Passing a ``float`` or "
             "list of ``float`` s functions similarly as for ``hidden_feats``."
